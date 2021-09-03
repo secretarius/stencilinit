@@ -9,7 +9,7 @@ export namespace Components {
     interface UcSideDrawer {
         "open": () => Promise<void>;
         "opened": boolean;
-        "title": string;
+        "titles": string;
     }
 }
 declare global {
@@ -26,7 +26,7 @@ declare global {
 declare namespace LocalJSX {
     interface UcSideDrawer {
         "opened"?: boolean;
-        "title"?: string;
+        "titles"?: string;
     }
     interface IntrinsicElements {
         "uc-side-drawer": UcSideDrawer;
